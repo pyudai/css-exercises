@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
 }
@@ -20,15 +21,15 @@ body, html {
 }
 
 .header {
-  background-color: #FFDE22;
+  background-color: #ffde22;
 }
 
 .sidebar {
-  background-color: #FF7755;
+  background-color: #ff7755;
 }
 
 .nav {
-  background-color: #00DDFF;
+  background-color: #00ddff;
 }
 
 .article {
@@ -44,4 +45,20 @@ body, html {
 
 .footer {
   background-color: #393f4d;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 200px 600px;
+  grid-template-rows: 200px 200px 1000px 200px;
+  gap: 15px;
+}
+
+.header,
+.footer {
+  grid-column: 1 / span 2;
+}
+
+.sidebar {
+  grid-row: 2 / span 2;
 }
